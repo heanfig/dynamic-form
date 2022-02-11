@@ -7,14 +7,14 @@ import { SelectionModel } from '@angular/cdk/collections';
 import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
-  selector: 'app-tables',
-  templateUrl: './tables.component.html',
-  styleUrls: ['./tables.component.scss']
+  selector: 'app-cities',
+  templateUrl: './cities.component.html',
+  styleUrls: ['./cities.component.scss']
 })
-export class TablesComponent {
+export class CitiesComponent {
 
   public form: FormGroup;
-  unsubcribe: any
+  unsubcribe: any;
   showForm = false;
   
   public fields: any[] = [

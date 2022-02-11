@@ -7,11 +7,11 @@ import { SelectionModel } from '@angular/cdk/collections';
 import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
-  selector: 'app-tables',
-  templateUrl: './tables.component.html',
-  styleUrls: ['./tables.component.scss']
+  selector: 'app-companies',
+  templateUrl: './companies.component.html',
+  styleUrls: ['./companies.component.scss']
 })
-export class TablesComponent {
+export class CompaniesComponent {
 
   public form: FormGroup;
   unsubcribe: any

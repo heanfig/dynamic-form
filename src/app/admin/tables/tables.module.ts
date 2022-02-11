@@ -10,9 +10,19 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { TablesRoutingModule } from './tables-routing.module';
 import { TablesComponent } from './tables/tables.component';
 import { DataService } from './data.service';
+import { SharedModule } from 'src/app/shared/shared.module';
+import { ReactiveFormsModule } from '@angular/forms';
+import { DynamicFormBuilderModule } from 'src/app/shared/dynamic-form-builder/dynamic-form-builder.module';
+import { DepartmentsComponent } from './departments/departments.component';
+import { CompaniesComponent } from './companies/companies.component';
+import { CitiesComponent } from './cities/cities.component';
+import {MatButtonModule} from '@angular/material/button';
+
 
 @NgModule({
   imports: [
+    SharedModule,
+    ReactiveFormsModule,
     CommonModule,
     TablesRoutingModule,
     MatTableModule,
@@ -20,9 +30,11 @@ import { DataService } from './data.service';
     MatPaginatorModule,
     MatSortModule,
     MatInputModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatButtonModule,
+    DynamicFormBuilderModule
   ],
-  declarations: [TablesComponent],
+  declarations: [TablesComponent, DepartmentsComponent, CompaniesComponent, CitiesComponent],
   providers: [DataService]
 })
 export class TablesModule {}
