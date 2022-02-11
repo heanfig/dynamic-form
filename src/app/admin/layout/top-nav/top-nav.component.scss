@@ -27,6 +27,16 @@
 .visible-sm {
   display: none;
 }
+
+.main-logo {
+  min-width: 120px;
+}
+
+.sura-back {
+  background: white;
+  box-shadow:2px 8px 4px -6px rgba(0,0,0,0.15)
+}
+
 @media screen and (max-width: 992px) {
   .visible-md {
       display: block;
